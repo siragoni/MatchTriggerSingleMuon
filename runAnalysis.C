@@ -8,7 +8,7 @@
 // precompiled header files (with extension pcm) are available, so that you do not need to
 // specify includes for those. for your own task however, you (probably) have not generated a
 // pcm file, so we need to include it explicitly
-#include "AliAnalysisTaskUPCforwardMC.h"
+#include "AliAnalysisTaskMatchTriggerForward.h"
 
 void runAnalysis(Int_t opt, Int_t isMC = 0)
 // opt = 0; 2018 q
@@ -96,12 +96,12 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
     // here we have to differentiate between using the just-in-time compiler
     // from root6, or the interpreter of root5
 #if !defined (__CINT__) || defined (__CLING__)
-    gInterpreter->LoadMacro("AliAnalysisTaskUPCforwardMC.cxx++g");
-    AliAnalysisTaskUPCforwardMC *task = reinterpret_cast<AliAnalysisTaskUPCforwardMC*>(gInterpreter->ExecuteMacro("AddTaskUPCforwardMC.C"));
+    gInterpreter->LoadMacro("AliAnalysisTaskMatchTriggerForward.cxx++g");
+    AliAnalysisTaskMatchTriggerForward *task = reinterpret_cast<AliAnalysisTaskMatchTriggerForward*>(gInterpreter->ExecuteMacro("AddTaskMatchTriggerForward.C"));
 #else
-    gROOT->LoadMacro("AliAnalysisTaskUPCforwardMC.cxx++g");
-    gROOT->LoadMacro("AddTaskUPCforwardMC.C");
-    AliAnalysisTaskUPCforwardMC *task = AddTaskUPCforwardMC();
+    gROOT->LoadMacro("AliAnalysisTaskMatchTriggerForward.cxx++g");
+    gROOT->LoadMacro("AddTaskMatchTriggerForward.C");
+    AliAnalysisTaskMatchTriggerForward *task = AddTaskUPCforwardMC();
 #endif
 
 
@@ -115,8 +115,8 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
         TChain* chain = new TChain("aodTree");
         // add a few files to the chain (change this so that your local files are added)
 
-        // FILE *f = fopen("listMCsample.txt","r");
-        FILE *f = fopen("list.txt","r");
+        FILE *f = fopen("listMCsample.txt","r");
+        // FILE *f = fopen("list.txt","r");
         char fileadd[300];
         Int_t flaggingValue = 0;
         while(fscanf(f,"%s",fileadd)==1){
@@ -147,8 +147,8 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
         // also specify the include (header) paths on grid
         alienHandler->AddIncludePath("-I. -I$ROOTSYS/include -I$ALICE_ROOT -I$ALICE_ROOT/include -I$ALICE_PHYSICS/include");
         // make sure your source files get copied to grid
-        alienHandler->SetAdditionalLibs("AliAnalysisTaskUPCforwardMC.cxx AliAnalysisTaskUPCforwardMC.h");
-        alienHandler->SetAnalysisSource("AliAnalysisTaskUPCforwardMC.cxx");
+        alienHandler->SetAdditionalLibs("AliAnalysisTaskMatchTriggerForward.cxx AliAnalysisTaskMatchTriggerForward.h");
+        alienHandler->SetAnalysisSource("AliAnalysisTaskMatchTriggerForward.cxx");
         // select the aliphysics version. all other packages
         // are LOADED AUTOMATICALLY!
         alienHandler->SetAliPhysicsVersion("vAN-20181028_ROOT6-1");
