@@ -1,0 +1,840 @@
+Test: ClusterMonitor is at voboxalice8.cern.ch:8084
+Execution machine:  b630266d13.cern.ch
+=========================================
+############## PATH : ##############
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/cgal/v4.6.3-28/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/DPMJET/v3.0.5-alice4-5/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/FreeType/v2.6-49/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GSL/v1.16-18/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/bin:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/bin:/usr/sue/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/puppetlabs/bin:/cvmfs/alice.cern.ch/bin:/cvmfs/alice.cern.ch/bin
+############## LD_LIBRARY_PATH : ##############
+.:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/vgm/4.3-alice1-36/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18/lib64:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/cgal/v4.6.3-28/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/boost/v1.59.0-22/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/DPMJET/v3.0.5-alice4-5/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/FreeType/v2.6-49/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GSL/v1.16-18/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/lib:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/lib64:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2
+############## ROOTSYS : ##############
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21
+############## which root : ##############
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/bin/root
+############## ALICE_ROOT : ##############
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1
+############## which aliroot : ##############
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/bin/aliroot
+############## system limits : ##############
+core file size          (blocks, -c) 2097151
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 117400
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 117400
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+############## memory : ##############
+             total       used       free     shared    buffers     cached
+Mem:         29378      25990       3387          3         63       5549
+-/+ buffers/cache:      20377       9000
+Swap:        19999       2549      17450
+=========================================
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/30     23 April 2015   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/30 (heads/v5-34-00-patches@v5-34-28-57-gec27989, Oct 18 2018, 11:47:00 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+
+Processing /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliDPG/prod-201812-01-1/AOD/AODtrainsim.C(1)...
+ALICE=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot
+ALICE_ENV=1
+ALICE_PHYSICS=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1
+ALICE_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1
+ALICE_TARGET=linuxx8664gcc
+ALICE_TARGET_EXT=linuxx8664gcc
+ALIDPG_RELEASE=prod-201812-01-1
+ALIDPG_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliDPG/prod-201812-01-1
+ALIDPG_VERSION=prod-201812-01
+ALIEN_CA=/var/log/AliEn/CA
+ALIEN_CM_AS_LDAP_PROXY=b630266d13.cern.ch:8092/JobAgent
+ALIEN_DEBUG=-d:Trace
+ALIEN_DOMAIN=cern.ch
+ALIEN_HOME=/home/grid/alisgm54/.alien
+ALIEN_HOSTNAME=b630266d13.cern.ch
+ALIEN_JDL_LPMANCHORPRODUCTION=LHC18q
+ALIEN_JDL_LPMANCHORRUN=295585
+ALIEN_JDL_LPMANCHORYEAR=2018
+ALIEN_JDL_LPMINTERACTIONTYPE=PbPb
+ALIEN_JDL_LPMJOBTYPEID=17068
+ALIEN_JDL_LPMMETADATA='Packages=[VO_ALICE@AliPhysics::v5-09-44-01-1, VO_ALICE@jemalloc::v3.6.0, VO_ALICE@AliDPG::prod-201812-01-1];OutputDir=/alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/AOD/#alien_counter_03i#;LPMParentPID=1346855520;LPMRunNumber=295585;LPMProductionType=MC;LPMInteractionType=PbPb;LPMProductionTag=LHC18l7;LPMAnchorRun=295585;LPMAnchorProduction=LHC18q;LPMAnchorYear=2018;LPMJobTypeID=17068'
+ALIEN_JDL_LPMPARENTPID=1346855520
+ALIEN_JDL_LPMPRODUCTIONTAG=LHC18l7
+ALIEN_JDL_LPMPRODUCTIONTYPE=MC
+ALIEN_JDL_LPMRUNNUMBER=295585
+ALIEN_JDL_OUTPUTDIR=/alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/AOD/001
+ALIEN_JDL_PACKAGES=VO_ALICE@AliDPG::prod-201812-01-1##VO_ALICE@jemalloc::v3.6.0##VO_ALICE@AliPhysics::v5-09-44-01-1
+ALIEN_JOBAGENT_ID=5828_1021592_200
+ALIEN_JOB_TOKEN='352|jSYUim]uaZ[uvmjm9uh5!tl5Rn|G'
+ALIEN_LD_LIBRARY_PATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/lib
+ALIEN_MASTERJOBID=1347172310
+ALIEN_ORGANISATION=ALICE
+ALIEN_PACKAGES='VO_ALICE@AliDPG::prod-201812-01-1 VO_ALICE@jemalloc::v3.6.0 VO_ALICE@AliPhysics::v5-09-44-01-1'
+ALIEN_PATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/bin
+ALIEN_PERL=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin/alien-perl
+ALIEN_PROCESSNAME=JOBAGENT
+ALIEN_PROC_ID=1347172319
+ALIEN_PROMPT=alien
+ALIEN_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395
+ALIEN_RUNTIME_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47
+ALIEN_SITE=CERN
+ALIEN_SITE_HOST=voboxalice8.cern.ch
+ALIEN_USER=alisgm54
+ALIEN_VERSION=v2-19-395
+ALIEN_VOs='ALICE#voboxalice8.cern.ch:8084#1347172319#352|jSYUim]uaZ[uvmjm9uh5!tl5Rn|G  '
+ALIEN_WORKDIR=/home/grid/alisgm54/alien-job-1347172319
+ALIEN_XRDCP_ENVELOPE='-----BEGIN SEALED CIPHER-----
+SmDs5lVc2qJwGJGnMJNzzlKJHhaCc1ue6vJMhNenjAZffPjOm26WmSzbrjG9qecHNDey5u4ojEBH
+4odx1UjNMVBWxaEdBPy5FWTbHW6PoIy90tEHxuZ+Mx64QV+sRDUMSbG5mO8eRKLyfK1gV2jWQuyZ
+qDp9z12B2XzoHGxSBEc=
+-----END SEALED CIPHER-----
+-----BEGIN SEALED ENVELOPE-----
+AAAAgKuWOlerADORG9eRgNI7x6wKKITyitjdTV-hGNqWA+4fLBQlYsXl4nhTxulNoAdClHMJ7zYN
+Tyui3t5k6s0DsO5Qzyo+hCpRxSNA7WL7WfRjOYx3K6qoW06tRVpuoidJIUCu-IhVaHFJd-Jm84Q0
+GRq-tHI5u1RU7+a5-pCAKmcDOuPYvh3PktJOoA+Kp4gCT4e4QVzQu3d1dr4CojNhHIuah3OMkcuk
+8jp+m5lmbE2a7pQ4EeGIUREml6rVFhoOVDKD+ru6yjBIcBts+svdHQwogQN8f3zi2cLLv3x0E31E
+6KrIM5qjo4LIgpRvdESO9shWl0IFT0-JpbsGQy3BdUuc6MU0tsC1uuc2ZkRZEUsABGYxlc3bY9f-
+949uObqbNCBbvDLp2A3pDiqaXAKarQ6LFcqKk-hOI34p4QHQHbgCgPlDWlKVq89K+o3uebflq0wD
+O9yjZKDMSvVOgV6QUHmigrcTjcttVR1wxgLl8fag-c1zl2427gi9K6DIfl3qquaCHREwf3BEs6eE
++TCCeYqIFiUM7-TbhUDOPuaaRFvAEi8kGv5BMNCyKganPierbFEWp2ly-pvg5UnPmRSjyO+6U+vP
+D1HWtwQ1tM05QshFCp9Czo9OQNZBSP0E9-ef7BzEBTr8m0lkLKcU83ZSCq1WRQOEWlpTrK67wbb0
+mz7CIq4mTlYYpfHRRna2BqPhWNhitfafG8r32ME+9JOcoGwvZI4CHDs5QeKV-0PMakvtIKRtJw-G
+783dz2GGo8BsBklbWt+q3YHjZ65UAwSYQjc3cKPDWn8Wb3dNk0kHSNsQ1En3RUwQLi3-17L-liw3
+mWdbWV7v8tT0m1PXqzSwFgI3ZqjaCG+VDwKswHiz6JYx0oY6GWQci0v30036A7bluwj+DGKOuhfu
+RagrclkoZaYe3PFRJO+0l9MAnfz4jpoRncRvhYMlT0Ik69nL4vlQLeKeXwfl5I9SsDCVXpaT8g+7
+O6Bx15i7qFSYeuFY2rA2MTTMiDctk+chyjthwT53Wj0S4kJkP6Mg68e2EItrEYD35i4l+vQujk-q
+U81Eb+6H5YYYnM7z9-HLtzknPtIRVdZ+wHnGDz+pNlLcxzd6QAup+eeHV2JGEAZ3b3qSSF+Z
+-----END SEALED ENVELOPE-----
+'
+ALIEN_XRDCP_SIGNED_ENVELOPE='turl=root://eosalice.cern.ch:1094//00/31066/65c2c05e-086b-11e9-9aea-875332eb8257\&access=write\&lfn=/alice/cern.ch/user/a/alidaq/recycle/alien-job-1347167633/log_archive.zip\&size=1779\&se=ALICE::CERN::EOS\&guid=65c2c05e-086b-11e9-9aea-875332eb8257\&md5=5bc084facaa20a6cb6e2204fb0ea67a2\&user=alidaq\&issuer=Authen.1\&issued=1545759297\&expires=1545845697\&hashord=turl-access-lfn-size-se-guid-md5-user-issuer-issued-expires-hashord\&hashord=turl-access-lfn-size-se-guid-md5-user-issuer-issued-expires-hashord\&signature=sONJsX+1IxYNJDk1SaWAEmUwCyUEPXZxuChjcQesKYgaz5ZmyGo0g4Z+AKN67e0fw/wijOo6IcSct4/yPPmYmDZhtQwxsXlkDKBzSM0me7R2MHRBxQNJzdlGq+Qet0mk0ZEz8e8WFNOKhsofjLDtyMoCBpu3KiFLwGsMMI/Ovwk='
+ALIEN_XRDCP_URL=root://eosalice.cern.ch:1094//00/31066/65c2c05e-086b-11e9-9aea-875332eb8257
+ALIPHYSICS_RELEASE=v5-09-44-01-1
+ALIPHYSICS_VERSION=v5-09-44-01-1
+ALIROOT_RELEASE=v5-09-44-1
+ALIROOT_VERSION=v5-09-44-1
+APMON_CONFIG=voboxalice8.cern.ch
+ATLAS_CGROUPS_BASE=/cgroup/memory
+ATLAS_LOCAL_AREA=/afs/cern.ch/project/gd/apps/atlas/local
+BASEDIR=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages
+BASH=/bin/sh
+BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="1" [2]="2" [3]="2" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.1.2(2)-release'
+BATCH_SYSTEM=HTCondor
+BOOST_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/boost/v1.59.0-22
+CASTOR_HOME=/castor/cern.ch/user/a/alisgm54
+CGAL_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/cgal/v4.6.3-28
+CONDORCE_COLLECTOR_HOST=ce514.cern.ch:9619
+CVS_RSH=ssh
+DIRSTACK=()
+DPMJET_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/DPMJET/v3.0.5-alice4-5
+DYLD_LIBRARY_PATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/lib:
+EDITOR='/bin/nano -w'
+EUID=26264
+FASTJET=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7
+FASTJET_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7
+FREETYPE_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/FreeType/v2.6-49
+G3SYS=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18
+G4ENSDFSTATEDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/G4ENSDFSTATE1.0
+G4INSTALL=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8
+G4INSTALL_DATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/
+G4LEDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/G4EMLOW6.41
+G4LEVELGAMMADATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/PhotonEvaporation3.1
+G4NEUTRONHPDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/G4NDL4.5
+G4NEUTRONXSDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/G4NEUTRONXS1.4
+G4RADIOACTIVEDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/RadioactiveDecay4.2
+G4SAIDXSDATA=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/share/Geant4-10.1.3/data/G4SAIDDATA1.1
+G4SYSTEM=Linux-g++
+G4VMCINSTALL=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4
+GAPI_LOCATION=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api
+GCC_TOOLCHAIN_ROOT=/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1
+GCLIENT_COMMAND_MAXWAIT=1800
+GCLIENT_COMMAND_RETRY=50
+GCLIENT_NOGSI=1
+GCLIENT_NOPROMPT=1
+GCLIENT_RETRY_DAMPING=4.0
+GCLIENT_RETRY_SLEEPTIME=2
+GCLIENT_SERVER_LIST='137.138.99.168:10000\|137.138.99.138:10000\|137.138.99.167:10000\|137.138.99.187:10000\|137.138.99.189:10000\|137.138.99.179:10000\|137.138.99.169:10000\|137.138.99.170:10000\|137.138.99.188:10000\|137.138.99.175:10000\|'
+GCLIENT_SERVER_RECONNECT=2
+GCLIENT_SERVER_RESELECT=4
+GEANT3DIR=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18
+GEANT3_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18
+GEANT4_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8
+GEANT4_VMC_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4
+GLEXEC_LOCATION=/usr
+GLITE_ENV_SET=TRUE
+GLITE_LOCATION=/usr
+GLITE_LOCATION_VAR=/var
+GLOBUS_LOCATION=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus
+GRIDMAPDIR=/etc/grid-security/gridmapdir
+GRID_ENV_LOCATION=/usr/libexec
+GRID_VO_ENV_SET=true
+GROUPS=()
+GROUP_DIR=/afs/cern.ch/group/z2
+GSHELL_GCC=/usr/bin/gcc
+GSHELL_NO_GCC=1
+GSHELL_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47
+GSL_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GSL/v1.16-18
+G_BROKEN_FILENAMES=1
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/home/grid/alisgm54
+HOSTNAME=b630266d13.cern.ch
+HOSTTYPE=x86_64
+HTTPS_CA_DIR=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/share/certificates
+HTTPS_CA_FILE=/pool/condor/dir_15143/+2fDC+3dch+2fDC+3dcern+2fOU+3dOrganic+20Units+2fOU+3dUsers+2fCN+3dmmmartin+2fCN+3d697178+2fCN+3dMiguel+20Martinez+20Pedreira+2fCN+3dproxy-voms+20alice+3a+2falice+2fRole+3dlcgadmin
+HTTPS_CERT_FILE=/pool/condor/dir_15143/+2fDC+3dch+2fDC+3dcern+2fOU+3dOrganic+20Units+2fOU+3dUsers+2fCN+3dmmmartin+2fCN+3d697178+2fCN+3dMiguel+20Martinez+20Pedreira+2fCN+3dproxy-voms+20alice+3a+2falice+2fRole+3dlcgadmin
+HTTPS_KEY_FILE=/pool/condor/dir_15143/+2fDC+3dch+2fDC+3dcern+2fOU+3dOrganic+20Units+2fOU+3dUsers+2fCN+3dmmmartin+2fCN+3d697178+2fCN+3dMiguel+20Martinez+20Pedreira+2fCN+3dproxy-voms+20alice+3a+2falice+2fRole+3dlcgadmin
+IFS=' 	
+'
+JALIEN_TOKEN_CERT='-----BEGIN CERTIFICATE-----
+MIIC9zCCAmCgAwIBAgIQDkBE/jdEenSyzDbfBmLeljANBgkqhkiG9w0BAQsFADAw
+MQswCQYDVQQGEwJjaDEOMAwGA1UEChMFQWxpRW4xETAPBgNVBAMTCEFsaUVuIENB
+MB4XDTE4MTIyNTE1MzYxOVoXDTE4MTIyNjE3MzYxOVowfDELMAkGA1UEBhMCY2gx
+DjAMBgNVBAoMBUFsaUVuMQ0wCwYDVQQDDARKb2JzMRAwDgYDVQQDDAdhbGlwcm9k
+MRAwDgYDVQQLDAdhbGlwcm9kMSowKAYDVQQLDCFxdWV1ZWlkPTEzNDcxNzIzMTkv
+cmVzdWJtaXNzaW9uPTAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCA
+fvkaQAVaui59U/yQd04GHJImYT9OeYlkqdzjVDx/GyY2VyxldKP7Fp4MAYuZR9od
+hwo3/5bgcvLw/i9kvUWNZG/86KovC8UahlB6tZDL6Z7KqUIgD8Y+Wt5LCFLA97wc
+2oolATgBUupTltMVZYfeBqiF4UgAyYYC+s+CZoCdpfdQZLL9NpwcSKlqaTkyI0Yt
+OiborGgQM8wrJVcqtAah1vbEB8Rh5x5kV5MwknKmprACGRtxHX0JG9vdTKzXVYZn
+0JTgik/BvdKDqsXaMT9B4rks1HcuOSIoUNIzV49yPFiIamkvHe9dlrOXvuu9nPIn
+VKkTF5dgOgCYk4wadWexAgMBAAGjQjBAMB8GA1UdIwQYMBaAFMZikFiiZcqVn5P0
+zunNh+pfVtTlMB0GA1UdDgQWBBRhVSvT+dSp9r6b+5+RISx342ExRTANBgkqhkiG
+9w0BAQsFAAOBgQCaIoeG7Gk2chHlA7Uyzxjr7+LLgfKHmYXp3G0HS05lF8WdH/h2
+UVE1OQ2H+yFlieB7wez14NxIlJSYrWUVWwg/2hl17xF0S0SJxgBEpPwGvD2TQoWk
+EQDm0gKunAKegBONaMFIqnDqlnle4/EJzwGsRARtcvJGyRr3OT6ywdUxIw==
+-----END CERTIFICATE-----
+'
+JALIEN_TOKEN_KEY='-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAgH75GkAFWroufVP8kHdOBhySJmE/TnmJZKnc41Q8fxsmNlcs
+ZXSj+xaeDAGLmUfaHYcKN/+W4HLy8P4vZL1FjWRv/OiqLwvFGoZQerWQy+meyqlC
+IA/GPlreSwhSwPe8HNqKJQE4AVLqU5bTFWWH3gaoheFIAMmGAvrPgmaAnaX3UGSy
+/TacHEipamk5MiNGLTom6KxoEDPMKyVXKrQGodb2xAfEYeceZFeTMJJypqawAhkb
+cR19CRvb3Uys11WGZ9CU4IpPwb3Sg6rF2jE/QeK5LNR3LjkiKFDSM1ePcjxYiGpp
+Lx3vXZazl77rvZzyJ1SpExeXYDoAmJOMGnVnsQIDAQABAoIBADvW5brLxbKSscO7
+sQq2BKfj9kvZTdoFz24JjMxxFhs7UXhM8GfvAc6UodWFgrVHONQ3ZxLc/C5aWbjR
+JtELM7C87UoiL97o5EmN8zyyAVR033YRjLHRpsizGIJoxeEHfZsSSvMgtiwnqOh0
+fKiiN7u17hUq7JUxRC9vDeP0SEEhtsXHA18blIBxqnv/0kyKvIBoFhnBKUp6IrVw
+toUKa2f3rGwI0crZp3A6fcN9Bvjv3czpUybLTcTYYvus1OsGKPVm9dfWQ486RC4J
+4BxCJPHXmoNFdJArsanHKw1NkwrVUVJY/tp+t4WCm5sr25IICW1vBr2kxiZdtV4C
+vHjhFIECgYEAzpx236nXxqtuZk8Aby0V5PhUXcAOf67DNNsvl1J+iz66hJ8yyd5k
+roqPpT5PDL1bdQ6xqI35JZCZIM8rzFvKxqHGnaEnuDCchaVUom4Pqq6v76/GDArp
+Gydt04vlpM1nm/Eopt4V8qXuCqh3eduHba5HJRjZBQAApYL5RIRd+T0CgYEAnzZD
+PRi7EiLCanMG92mH+BibyHjg/FjSYnA1Q2Lnb9NIS3YM5OAmjY/REojjJqZVkybh
+Pb2ChEtuvDqen7qX72MhBa9YswiGh+rEVoD7QRCTpeZGYl4GqvVnr14HSUGmIckp
+l3mmM03iwx+qTIYwZaBfJUFYPZkHQ+cILKW/R4UCgYEAwkziffR7t5oAeLZS8jq0
+HGBs9r1m5Sy050A5wVUTLGARiCcu3CkJBhvIet3d+V0aZTssWBcr9ufFGdW6mrS4
+PZRl9FdZwx30FLsmnJpkoV8mlYH3/dtE3QR3hDpL/HAuv7hLQqIYgdkJw3wq365T
+7hG3VmvHq6wU75H8WTMiLQECgYB7Jfm0VGC+kmxW8ko9LT+iw0YcNoOwLPPueGR6
+jxH9CSwuUk1+63JmpQtOjttElfwzKiunGeLOeZpZte3kFuxWmhJ81ziAouOMVicv
+0eyGU1AhTpC6nYgCzHc6yjxQiZr7HyIwrEPGA0SXMPME5fahZP6zTmv2mVtpRlao
+Ujw2EQKBgDF77hpQLuJQjqKA9MRbLaoC1b2SV1tWgPG1tGZq2ZGMqC4xAHt85EXg
+uVMlkROnOpYbttbokU6fVxc/OvB10UBO+8Rjt5nOa1wBOG6Ba9oxRAmhtcw3W814
+x+1Omy1w1sUyYNPjviB7S6cGXj2+4upmBpWObnZAA3FO2uAkTKsG
+-----END RSA PRIVATE KEY-----
+'
+JMALLOC=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/jemalloc/v3.6.0
+JOBFEATURES=/tmp/mjf-alisgm54/jobfeatures-voboxalice8.cern.ch_28703267.0_1545724229
+LANG=en_US.UTF-8
+LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
+LCG_LOCATION=/usr
+LD_LIBRARY_PATH=.:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/vgm/4.3-alice1-36/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18/lib64:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/cgal/v4.6.3-28/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/boost/v1.59.0-22/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/DPMJET/v3.0.5-alice4-5/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/FreeType/v2.6-49/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GSL/v1.16-18/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/lib:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/lib64:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2
+LD_PRELOAD=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/jemalloc/v3.6.0/lib/libjemalloc.so
+LESSOPEN='||/usr/bin/lesspipe.sh %s'
+LOADEDMODULES=BASE/1.0:AliEn/v2-19-395:Toolchain/GCC-v4.9.3:GCC-Toolchain/v4.9.3-alice3-9:AliEn-Runtime/v2-19-le-47:GSL/v1.16-18:FreeType/v2.6-49:ROOT/v5-34-30-alice10-21:DPMJET/v3.0.5-alice4-5:boost/v1.59.0-22:cgal/v4.6.3-28:fastjet/v3.2.1_1.024-alice3-7:GEANT3/v2-5-18:GEANT4/v4.10.01.p03-alice1-8:vgm/4.3-alice1-36:GEANT4_VMC/v3-2-p3-monopole-alice1-4:Vc/1.3.3-alice2-2:AliRoot/v5-09-44-1:AliPhysics/v5-09-44-01-1:AliDPG/prod-201812-01-1:jemalloc/v3.6.0:APISCONFIG/V1.1x
+LOGNAME=alisgm54
+MACHINEFEATURES=/etc/machinefeatures
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/spool/mail/alisgm54
+MANPATH=/opt/glite/share/man::
+MODULEPATH=/cvmfs/alice.cern.ch/etc/toolchain/modulefiles/el6-x86_64:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.7.2/Modules/modulefiles:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.8.3/Modules/modulefiles:/cvmfs/alice.cern.ch/el6-x86_64/Modules/modulefiles:/cvmfs/alice.cern.ch/el7-x86_64/Modules/modulefiles
+MODULES_USE_COMPAT_VERSION=1
+MYPROXY_SERVER=myproxy.cern.ch
+NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P1
+OMP_NUM_THREADS=1
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+OS_AUTH_TYPE=v3fedkerb
+OS_AUTH_URL=https://keystone.cern.ch/v3
+OS_IDENTITY_API_VERSION=3
+OS_IDENTITY_PROVIDER=sssd
+OS_MUTUAL_AUTH=disabled
+OS_PROJECT_DOMAIN_ID=default
+OS_PROJECT_NAME='Personal alisgm54'
+OS_PROTOCOL=kerberos
+OS_VOLUME_API_VERSION=2
+PATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4_VMC/v3-2-p3-monopole-alice1-4/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT4/v4.10.01.p03-alice1-8/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/cgal/v4.6.3-28/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/DPMJET/v3.0.5-alice4-5/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/FreeType/v2.6-49/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GSL/v1.16-18/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/bin:/cvmfs/alice.cern.ch/el6-x86_64/Packages/GCC-Toolchain/v4.9.3-alice3-1/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/bin:/usr/sue/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/puppetlabs/bin:/cvmfs/alice.cern.ch/bin:/cvmfs/alice.cern.ch/bin
+PERL5DB='use Devel::Trace'
+PERLLIB=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/lib/perl
+POSIXLY_CORRECT=y
+PPID=10472
+PS4='+ '
+PWD=/pool/grid/alisgm54/alien-job-1347172319
+PYTHONPATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21/lib
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+ROOTSYS=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice10-21
+ROOT_BASEDIR=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT
+ROOT_INCLUDE_PATH=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliPhysics/v5-09-44-01-1/include:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/include/Pythia8:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/include:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2/include:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/GEANT3/v2-5-18/include/TGeant3:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/fastjet/v3.2.1_1.024-alice3-7/include:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/boost/v1.59.0-22/include
+ROOT_RELEASE=v5-34-30-alice10-21
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=5
+SITE_NAME=CERN-PROD
+SRM_PATH=/opt/d-cache/srm
+STAGE_HOST=castoralice
+STAGE_SVCCLASS=t0alice
+SYSTEM_LIBPATH=lib64
+TEMP=/pool/condor/dir_15143
+TERM=dumb
+TMP=/pool/condor/dir_15143
+TMPDIR=/pool/condor/dir_15143/tmp
+UID=26264
+USER=alisgm54
+VC_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/Vc/1.3.3-alice2-2
+VGM_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/vgm/4.3-alice1-36
+VO_ALICE_DEFAULT_SE=srm-alice.cern.ch
+VO_ALICE_SW_DIR=/afs/cern.ch/project/gd/apps/alice
+VO_ATLAS_DEFAULT_SE=srm-atlas.cern.ch
+VO_ATLAS_SW_DIR=/cvmfs/atlas.cern.ch/repo/sw
+VO_CMS_DEFAULT_SE=srm-cms.cern.ch
+VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
+VO_DTEAM_DEFAULT_SE=srm-public.cern.ch
+VO_DTEAM_SW_DIR=/afs/cern.ch/project/gd/apps/dteam
+VO_GEANT4_DEFAULT_SE=lxdpm101.cern.ch
+VO_GEANT4_SW_DIR=/afs/cern.ch/project/gd/apps/geant4
+VO_ILC_DEFAULT_SE=srm-public.cern.ch
+VO_ILC_SW_DIR=/cvmfs/ilc.desy.de
+VO_LHCB_DEFAULT_SE=srm-lhcb.cern.ch
+VO_LHCB_SW_DIR=/cvmfs/lhcb.cern.ch
+VO_NA48_DEFAULT_SE=srm-public.cern.ch
+VO_NA48_SW_DIR=/afs/cern.ch/project/gd/apps/na48
+VO_OPS_DEFAULT_SE=srm-public.cern.ch
+VO_OPS_SW_DIR=/afs/cern.ch/project/gd/apps/ops
+VO_UNOSAT_DEFAULT_SE=srm-public.cern.ch
+VO_UNOSAT_SW_DIR=/afs/cern.ch/project/gd/apps/unosat
+VO_VO_ALEPH_CERN_CH_DEFAULT_SE=srm-public.cern.ch
+VO_VO_ALEPH_CERN_CH_SW_DIR=/afs/cern.ch/aleph
+VO_VO_DELPHI_CERN_CH_DEFAULT_SE=srm-public.cern.ch
+VO_VO_DELPHI_CERN_CH_SW_DIR=/afs/cern.ch/delphi
+VO_VO_GEAR_CERN_CH_DEFAULT_SE=lxdpm104.cern.ch
+VO_VO_GEAR_CERN_CH_SW_DIR=/afs/cern.ch/project/gd/apps/gear
+VO_VO_L3_CERN_CH_DEFAULT_SE=srm-public.cern.ch
+VO_VO_L3_CERN_CH_SW_DIR=/afs/cern.ch/l3
+VO_VO_OPAL_CERN_CH_DEFAULT_SE=srm-public.cern.ch
+VO_VO_OPAL_CERN_CH_SW_DIR=/afs/cern.ch/opal
+VO_VO_SIXT_CERN_CH_DEFAULT_SE=srm-public.cern.ch
+VO_VO_SIXT_CERN_CH_SW_DIR=/afs/cern.ch/project/gd/apps/sixt
+X509_CERT_DIR=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn-Runtime/v2-19-le-47/globus/share/certificates
+X509_USER_PROXY=/pool/condor/dir_15143/+2fDC+3dch+2fDC+3dcern+2fOU+3dOrganic+20Units+2fOU+3dUsers+2fCN+3dmmmartin+2fCN+3d697178+2fCN+3dMiguel+20Martinez+20Pedreira+2fCN+3dproxy-voms+20alice+3a+2falice+2fRole+3dlcgadmin
+_=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/bin/aliroot
+_CHIRP_DELAYED_UPDATE_PREFIX='Chirp*'
+_CONDOR_ANCESTOR_15143=15147:1545743936:2057802063
+_CONDOR_ANCESTOR_20811=15143:1545743935:2969884174
+_CONDOR_ANCESTOR_8868=20811:1537893352:1645760982
+_CONDOR_CHIRP_CONFIG=/pool/condor/dir_15143/.chirp.config
+_CONDOR_JOB_AD=/pool/condor/dir_15143/.job.ad
+_CONDOR_JOB_IWD=/pool/condor/dir_15143
+_CONDOR_JOB_PIDS=
+_CONDOR_MACHINE_AD=/pool/condor/dir_15143/.machine.ad
+_CONDOR_PID_NS_INIT_STATUS_FILENAME=/pool/condor/dir_15143/.condor_pid_ns_status
+_CONDOR_SCRATCH_DIR=/pool/condor/dir_15143
+_CONDOR_SLOT=slot1_2
+_CONDOR_WRAPPER_ERROR_FILE=/pool/condor/dir_15143/.job_wrapper_failure
+_LMFILES_=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/BASE/1.0:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/AliEn/v2-19-395:/cvmfs/alice.cern.ch/etc/toolchain/modulefiles/el6-x86_64/Toolchain/GCC-v4.9.3:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/GCC-Toolchain/v4.9.3-alice3-9:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/AliEn-Runtime/v2-19-le-47:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/GSL/v1.16-18:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/FreeType/v2.6-49:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/ROOT/v5-34-30-alice10-21:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/DPMJET/v3.0.5-alice4-5:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/boost/v1.59.0-22:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/cgal/v4.6.3-28:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/fastjet/v3.2.1_1.024-alice3-7:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/GEANT3/v2-5-18:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/GEANT4/v4.10.01.p03-alice1-8:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/vgm/4.3-alice1-36:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/GEANT4_VMC/v3-2-p3-monopole-alice1-4:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/Vc/1.3.3-alice2-2:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/AliRoot/v5-09-44-1:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/AliPhysics/v5-09-44-01-1:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/AliDPG/prod-201812-01-1:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/jemalloc/v3.6.0:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Modules/modulefiles/APISCONFIG/V1.1x
+>>>>> Using run_number from ALIEN_JDL_LPMRUNNUMBER as 295585W-TEnvRec::ChangeValue: duplicate entry <Library.vector<short>=vector.dll vectorbool.dll> for level 0; ignored
+I-AliCDBManager::Init: AliEn classes enabled in Root. AliCDBGrid factory registered.
+I-AliCDBManager::SetDefaultStorage: Setting the run-number will set the corresponding OCDB for raw data reconstruction.
+=> Trying to connect to Server [2] root://137.138.99.167:10000 as User alisgm54 
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/OCDBFoldervsRunRange.xml?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+I-AliCDBHandler::OnStartDocument: Reading XML file for LHCPeriod <-> Run Range correspondence
+I-AliCDBManager::GetLHCPeriodAgainstAlienFile:  LHC folder = alien://folder=/alice/data/2018/OCDB
+I-AliCDBManager::GetLHCPeriodAgainstAlienFile:  LHC period start run = 282901
+I-AliCDBManager::GetLHCPeriodAgainstAlienFile:  LHC period end run = 999999999
+I-AliCDBGrid::QueryCDB: Querying files valid for run 295585 and path "*" into CDB storage  "alien:///alice/data/2018/OCDB/"
+I-AliCDBGrid::QueryValidFiles: Only latest version will be returned
+I-AliCDBGrid::QueryCDB: 317 valid files found!
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/GRP/GRP/Data/Run295585_295585_v1_s0.root in SE <ALICE::CERN::OCDB>
+Setting specific storage: ITS/Align/Data -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+I-AliCDBGrid::QueryCDB: Querying files valid for run 295585 and path "*" into CDB storage  "alien:///alice/simulation/2008/v4-15-Release/Residual/"
+I-AliCDBGrid::QueryValidFiles: Only latest version will be returned
+I-AliCDBGrid::QueryCDB: 217 valid files found!
+Setting specific storage: ITS/Calib/SPDSparseDead -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+Setting specific storage: TPC/Calib/ClusterParam -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+Setting specific storage: TPC/Calib/RecoParam -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+Setting specific storage: TPC/Calib/TimeGain -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+Setting specific storage: TPC/Calib/Correction -> alien://Folder=/alice/simulation/2008/v4-15-Release/Residual/
+Setting specific storage: ZDC/Align/Data -> alien://Folder=/alice/simulation/2008/v4-15-Release/Ideal/
+I-AliCDBGrid::QueryCDB: Querying files valid for run 295585 and path "*" into CDB storage  "alien:///alice/simulation/2008/v4-15-Release/Ideal/"
+I-AliCDBGrid::QueryValidFiles: Only latest version will be returned
+I-AliCDBGrid::QueryCDB: 246 valid files found!
+Setting specific storage: ZDC/Calib/Pedestals -> alien://Folder=/alice/simulation/2008/v4-15-Release/Ideal/
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/simulation/2008/v4-15-Release/Residual/TPC/Calib/RecoParam/Run227735_999999999_v16_s0.root in SE <ALICE::CERN::OCDB>
+=> Trying to connect to Server [1] root://137.138.99.138:10000 as User alisgm54 
+==================================================================
+===========    RUNNING FILTERING TRAIN   ==========
+===========    Collision System is p-p    ==========
+==================================================================
+=  Configuring analysis train for:                               =
+=  Physics selection                                                =
+=  ESD filter                                                    =
+=  MUON copy AOD                                                 =
+=  PWGHF vertexing                                                =
+========================================================================================
+PIDResponse: Initialising AliAnalysisTaskPIDResponse
+             Using MC with tune on data.
+             !!! ATTENTION ATTENTION ATTENTION !!!
+             You MUST make sure the reco pass set (2: 2) corresponds to the one this MC was produced for!
+========================================================================================
+I-AliTaskCDBconnect::InitGRP: AliCDBconnect: #### Loading GRP to init B-field...
+I-AliGRPManager::ReadGRPEntry: Found an AliGRPObject in GRP/GRP/Data, reading it
+I-AliMagF::InitMachineField: Beam rigidity factor rescalded by 2.537
+I-AliMagF::Print: MagneticFieldMap:L3: +29999 Dip: +5999 kA;  | Polarities in LHC convention
+I-AliMagF::Print: Solenoid (+1.00*)5 kG, Dipole ON (+1.00) 
+I-AliMagF::Print: Machine B fields for A-A beam (2511 GeV): QGrad: 20.0170 Dipole: 34.4637
+I-AliMagF::Print: Uses Sol30_Dip6_Hole of $(ALICE_ROOT)/data/maps/mfchebKGI_sym.root
+I-TGeoGlobalMagField::SetField: Global magnetic field set to <MagneticFieldMap>
+I-TGeoGlobalMagField::Lock: Global magnetic field <MagneticFieldMap> is now locked
+I-AliGRPManager::SetMagField: Running with the B field constructed out of GRP !
+I-AliTaskCDBconnect::InitGRP: AliCDBconnect: #### Loading geometry...
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/GRP/Geometry/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+I-TGeoManager::CloseGeometry: Geometry loaded from file...
+I-TGeoManager::SetTopVolume: Top volume is ALIC. Master volume is ALIC
+I-TGeoNavigator::BuildCache: --- Maximum geometry depth set to 100
+I-TGeoManager::Voxelize: Voxelizing...
+I-TGeoManager::CountLevels: max level = 12, max placements = 641
+I-TGeoManager::CloseGeometry: 6364466 nodes/ 5637 volume UID's in ALICE geometry
+I-TGeoManager::CloseGeometry: ----------------modeler ready----------------
+I-AliGeomManager::LoadGeometry: From now on using geometry from CDB base folder "alien://?User=?DBFolder=/alice/data/2018/OCDB?SE=default?CacheFolder=?OperateDisconnected=1?CacheSize=1073741824?CleanupInterval=0"
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/GRP/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/simulation/2008/v4-15-Release/Residual/ITS/Align/Data/Run0_999999999_v6_s0.root in SE <ALICE::CERN::EOS>
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/TPC/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+W-AliGeomManager::LoadAlignObjsFromCDBSingleDet: 73 alignment objects loaded for TPC, which has 72 alignable volumes
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/TRD/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/TOF/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/EMCAL/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/PHOS/Align/Data/Run0_999999999_v1_s0.root in SE <ALICE::CERN::OCDB>
+W-AliGeomManager::LoadAlignObjsFromCDBSingleDet: 16 alignment objects loaded for PHOS, which has 11 alignable volumes
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/data/2018/OCDB/MUON/Align/Data/Run295424_999999999_v5_s0.root in SE <ALICE::CERN::OCDB>
+I-AliGeomManager::ApplyAlignObjsFromCDB: Alignment objects loaded for: GRP ITS TPC TRD TOF EMCAL PHOS MUON 
+W-AliTaskCDBconnect::InitGRP: Problem with align objects
+I-AliCDBManager::SetDefaultStorage: Setting the run-number will set the corresponding OCDB for raw data reconstruction.
+I-AliPhysicsSelectionTask::AliPhysicsSelectionTask: Physics Event Selection enabled.
+I-AliTOFPIDResponse::LoadTOFtailHisto: Loaded TOF tail histogram from file $ALICE_ROOT/TOF/data/addTOFtail.root
+I-AddTaskFilteredTree: BEGIN
+AddTaskFilteredTree::BEGIN
+Created track cuts for: TPC+ITS refit and KinkRejection required - for cut studies
+AliAnalysisTaskFilteredTree_SetLowPtV0DownscalingF::Use DEFAULT	
+AliAnalysisTaskFilteredTree_SetLowPtV0DownscalingF::Use DEFAULT	
+AddTaskFilteredTree::END
+Setting Outputformat to AliAODConversionPhoton 
+Setting Outputformat to AliAODConversionPhoton 
+
+Event cutnumber 
+00000003
+
+EnergyVar-enum: '0', PeriodVar-enum: '0' 
+Running in pp mode 
+	 only events triggered by V0OR will be analysed 
+	 Vertex cut with |Z_{vtx}| <10.00 
+MC event cuts: 
+	 no rejection was applied 
+	 maximum factor between jet and pt hard = 2.50 
+
+Event cutnumber 
+00000003
+
+EnergyVar-enum: '0', PeriodVar-enum: '0' 
+Running in pp mode 
+	 only events triggered by V0OR will be analysed 
+	 Vertex cut with |Z_{vtx}| <10.00 
+MC event cuts: 
+	 no rejection was applied 
+	 maximum factor between jet and pt hard = 2.50 
+have chosen onfly V0
+
+Conversion cutnumber 
+060000081300100001100000000
+
+Electron cuts & Secondary Track Cuts - only track from secondaries enter analysis: 
+	 no like sign pairs from V0s 
+	 eta_{e} < 5.00
+	 reject: 0.00 < phi < 6.28 with -5.00 < eta < 5.00  
+	 p_{T,e} > 0.05
+	 TPC refit 
+	 no kinks 
+	 accept: -1000000000.00 < n sigma_{e,TPC} < 1000000000.00
+	 reject: 0.50 < p_{e,T} < 5.00, n sigma_{pi,TPC} < -10.00
+	 reject: p_{e,T} > 5.00, n sigma_{pi,TPC} < -10.00
+Photon cuts: 
+	 using Onfly V0 finder 
+	 1 dimensional q_{T} cut applied with maximum of 0.10 
+	 chi^{2} max cut chi^{2} < 50.00 
+	 psi_{pair} max cut |psi_{pair}| < 10000.00 
+	 0.00 < R_{conv} < 180.00
+	 Z_{conv} < 1000.00
+	 eta_{conv} < 5.00
+	 #cluster TPC/ #findable clusters TPC (corrected for radius) > 0.35
+	 p_{T,gamma} > 0.02
+	 cos(Theta_{point}) > -1.00 
+	 dca_{R} < 1000.00 
+	 dca_{Z} < 1000.00 
+have chosen offline V0
+
+Conversion cutnumber 
+160000081300100001100000000
+
+Electron cuts & Secondary Track Cuts - only track from secondaries enter analysis: 
+	 no like sign pairs from V0s 
+	 eta_{e} < 5.00
+	 reject: 0.00 < phi < 6.28 with -5.00 < eta < 5.00  
+	 p_{T,e} > 0.05
+	 TPC refit 
+	 no kinks 
+	 accept: -1000000000.00 < n sigma_{e,TPC} < 1000000000.00
+	 reject: 0.50 < p_{e,T} < 5.00, n sigma_{pi,TPC} < -10.00
+	 reject: p_{e,T} > 5.00, n sigma_{pi,TPC} < -10.00
+Photon cuts: 
+	 using Offline V0 finder 
+	 1 dimensional q_{T} cut applied with maximum of 0.10 
+	 chi^{2} max cut chi^{2} < 50.00 
+	 psi_{pair} max cut |psi_{pair}| < 10000.00 
+	 0.00 < R_{conv} < 180.00
+	 Z_{conv} < 1000.00
+	 eta_{conv} < 5.00
+	 #cluster TPC/ #findable clusters TPC (corrected for radius) > 0.35
+	 p_{T,gamma} > 0.02
+	 cos(Theta_{point}) > -1.00 
+	 dca_{R} < 1000.00 
+	 dca_{Z} < 1000.00 
+Registering delta AOD file
+/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliRoot/v5-09-44-1/ANALYSIS/ESDfilter/macros/AddTaskESDFilter.C548: Creating Track Cuts for LHC15f
+I-AliESDtrackCuts::GetStandardTPCOnlyTrackCuts: Creating track cuts for TPC-only.
+I-AliESDtrackCuts::GetStandardITSTPCTrackCuts2011: Creating track cuts for ITS+TPC (2011 definition).
+ <message repeated 2 times>
+I-AliESDtrackCuts::GetStandardTPCOnlyTrackCuts: Creating track cuts for TPC-only.
+I-AliESDtrackCuts::GetStandardITSTPCTrackCuts2011: Creating track cuts for ITS+TPC (2011 definition).
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for offline v0s
+No container for onfly v0s found
+No container for onfly v0s found
+No container for offline v0s
+Data container cAUTO_OUTPUT already has a producer: ESD Filter
+ <message repeated 3 times>
+I-AliEMCALGeometry::AliEMCALGeometry: Name <<EMCAL_COMPLETE12SMV1_DCAL_8SM>>
+I-AliEMCALGeometry::AliEMCALGeometry: EMCAL Trigger Mapping Version V2 Enabled
+Data container cAUTO_OUTPUT already has a producer: Particle Kine Filter
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/EventStat_temp.root	
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/EventStat_temp.root?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+E-TUrl::TUrl: /pool/grid/alisgm54/alien-job-1347172319/ROOTMERGE-add2f4d6-086b-11e9-9717-b3c8b8bcbeef.root:/ malformed, URL must contain "://"
+W-TFileMerger::PartialMerge: problems removing temporary local file ''
+I-MergeOutputs: 
+#####   Merged 1 output files to <EventStat_temp.root>
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AODQA.root	
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AODQA.root?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+E-TUrl::TUrl: /pool/grid/alisgm54/alien-job-1347172319/ROOTMERGE-ae5c82aa-086b-11e9-9717-b3c8b8bcbeef.root:/ malformed, URL must contain "://"
+W-TFileMerger::PartialMerge: problems removing temporary local file ''
+I-MergeOutputs: 
+#####   Merged 1 output files to <AODQA.root>
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.root	
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.root?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+E-TUrl::TUrl: /pool/grid/alisgm54/alien-job-1347172319/ROOTMERGE-af8b9d3c-086b-11e9-9717-b3c8b8bcbeef.root:/ malformed, URL must contain "://"
+W-TFileMerger::PartialMerge: problems removing temporary local file ''
+I-MergeOutputs: 
+#####   Merged 1 output files to <AliAOD.root>
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.VertexingHF.root	
+E-TAlienFile::Open: No more images to try - giving up
+E-TFile::Cp: cannot open source file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.VertexingHF.root
+E-TFileMerger::AddFile: cannot get a local copy of file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.VertexingHF.root
+W-MergeOutput: No <AliAOD.VertexingHF.root> files found.
+ERROR: Cannot merge AliAOD.VertexingHF.root
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.Muons.root	
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.Muons.root?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+E-TUrl::TUrl: /pool/grid/alisgm54/alien-job-1347172319/ROOTMERGE-b0ebd8f4-086b-11e9-9717-b3c8b8bcbeef.root:/ malformed, URL must contain "://"
+W-TFileMerger::PartialMerge: problems removing temporary local file ''
+I-MergeOutputs: 
+#####   Merged 1 output files to <AliAOD.Muons.root>
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAODGammaConversion.root	
+E-TAlienFile::Open: No more images to try - giving up
+E-TFile::Cp: cannot open source file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAODGammaConversion.root
+E-TFileMerger::AddFile: cannot get a local copy of file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAODGammaConversion.root
+W-MergeOutput: No <AliAODGammaConversion.root> files found.
+ERROR: Cannot merge AliAODGammaConversion.root
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.Jets.root	
+E-TAlienFile::Open: No more images to try - giving up
+E-TFile::Cp: cannot open source file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.Jets.root
+E-TFileMerger::AddFile: cannot get a local copy of file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/AliAOD.Jets.root
+W-MergeOutput: No <AliAOD.Jets.root> files found.
+ERROR: Cannot merge AliAOD.Jets.root
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/FilterEvents_Trees.root	
+E-TAlienFile::Open: No more images to try - giving up
+E-TFile::Cp: cannot open source file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/FilterEvents_Trees.root
+E-TFileMerger::AddFile: cannot get a local copy of file alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/FilterEvents_Trees.root
+W-MergeOutput: No <FilterEvents_Trees.root> files found.
+ERROR: Cannot merge FilterEvents_Trees.root
+Collection name='TObjArray', class='TObjArray', size=16
+ OBJ: TNamed	alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/pyxsec_hists.root	
+I-TAlienFile::Open: Accessing image 1 of alien:///alice/sim/2018/LHC18l7/kCohJpsiToMu/295585/001/pyxsec_hists.root?filetype=raw&cachesz=4000000&readaheadsz=2000000&rmpolicy=1 in SE <ALICE::CERN::EOS>
+E-TUrl::TUrl: /pool/grid/alisgm54/alien-job-1347172319/ROOTMERGE-b25a01fc-086b-11e9-9717-b3c8b8bcbeef.root:/ malformed, URL must contain "://"
+W-TFileMerger::PartialMerge: problems removing temporary local file ''
+I-MergeOutputs: 
+#####   Merged 1 output files to <pyxsec_hists.root>
+(class TAlienJDL*)0x2b76633e6d80
+(class TAlienJDL*)0x2b7665537200
+I-AliAnalysisAlien::SetDefaultOutputs: Plugin will use the output files taken from analysis manager
+===== TERMINATING GRID ANALYSIS JOB: Analysis Train
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TTree for container cAUTO_OUTPUT in file AliAOD.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (cAUTO_OUTPUT) or to embed it in a TList
+E-TFile::cd: Unknown directory PIDqa
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container PIDqa in file AODQA.root:PIDqa.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (PIDqa) or to embed it in a TList
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file PtResHistograms.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file PtResHistograms.root in read-only mode
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container ForwardSums in file AODQA.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (ForwardSums) or to embed it in a TList
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container CentralSums in file AODQA.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (CentralSums) or to embed it in a TList
+E-TFile::TFile: file PCMv0Checks.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file PCMv0Checks.root in read-only mode
+E-TFile::TFile: file AliAOD.VertexingHF.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file AliAOD.VertexingHF.root in read-only mode
+Configuration initialized for run 295585 (MC: 1):
+Collision trigger classes:
+&1 *0
+&2 *2
+&32 *1
+&64 *7
+&128 *8
+&256 *10
+&512 *11
+&1024 *12
+&2048 *9
+&8192 *15
+&16384 *13
+&32768 *14
+&65536 *3
+&131072 *4
+&524288 *6
+&2097152 *5
+&536870912 *16
+Background trigger classes:
+
+Total available events:
+Trigger Classes:
+Event count for trigger combinations:
+ : 5701 triggers
+  MB : 237 triggers
+  MB  DMUnlikeLPt_MB : 62 triggers
+Event count for single trigger:
+  DMUnlikeLPt_MB: 62 triggers
+  MB: 299 triggers
+Writing result to event_stat.root
+### Input events                 : 6000
+### Processed events w/o errors  : 6000
+### Failed events                : 0
+### Accepted events for mask: ANY: 1759
+E-AliForwardMCMultiplicityTask::Terminate: No output list defined ((nil))
+E-AliCentralMCMultiplicityTask::Terminate: No output list defined ((nil))
+I-AliAnalysisTaskMCParticleFilter::Terminate: Average -section 0.0000E+00 and total number of trials 0.000000E+00
+W-AliAnalysisManager::ValidateOutputs: File AliAOD.root was not closed. Closing.
+W-AliAnalysisManager::ValidateOutputs: File AODQA.root was not closed. Closing.
+W-AliAnalysisManager::ValidateOutputs: File EventStat_temp.root was not closed. Closing.
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ValidateOutputs: Output file <FilterEvents_Trees.root> was not created or invalid
+Real time 0:00:11, CP time 2.970
+(class TAlienJDL*)0x2b7670b3b880
+(class TAlienJDL*)0x2b7670b3b900
+I-AliAnalysisAlien::SetDefaultOutputs: Plugin will use the output files taken from analysis manager
+===== TERMINATING GRID ANALYSIS JOB: Analysis Train
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TTree for container cAUTO_OUTPUT in file AliAOD.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (cAUTO_OUTPUT) or to embed it in a TList
+E-TFile::cd: Unknown directory PIDqa
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container PIDqa in file AODQA.root:PIDqa.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (PIDqa) or to embed it in a TList
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file FilterEvents_Trees.root in read-only mode
+E-TFile::TFile: file PtResHistograms.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file PtResHistograms.root in read-only mode
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container ForwardSums in file AODQA.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (ForwardSums) or to embed it in a TList
+W-AliAnalysisManager::ImportWrappers: Could not import object of type:TList for container CentralSums in file AODQA.root:.
+ Object will not be available in Terminate(). Try if possible to name the output object as the container (CentralSums) or to embed it in a TList
+E-TFile::TFile: file PCMv0Checks.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file PCMv0Checks.root in read-only mode
+E-TFile::TFile: file AliAOD.VertexingHF.root does not exist
+E-AliAnalysisManager::ImportWrappers: Cannot open file AliAOD.VertexingHF.root in read-only mode
+Configuration initialized for run 295585 (MC: 1):
+Collision trigger classes:
+&1 *0
+&2 *2
+&32 *1
+&64 *7
+&128 *8
+&256 *10
+&512 *11
+&1024 *12
+&2048 *9
+&8192 *15
+&16384 *13
+&32768 *14
+&65536 *3
+&131072 *4
+&524288 *6
+&2097152 *5
+&536870912 *16
+Background trigger classes:
+
+Total available events:
+Trigger Classes:
+Event count for trigger combinations:
+ : 5701 triggers
+  MB : 237 triggers
+  MB  DMUnlikeLPt_MB : 62 triggers
+Event count for single trigger:
+  DMUnlikeLPt_MB: 62 triggers
+  MB: 299 triggers
+Writing result to event_stat.root
+### Input events                 : 12000
+### Processed events w/o errors  : 12000
+### Failed events                : 0
+### Accepted events for mask: ANY: 3518
+E-AliForwardMCMultiplicityTask::Terminate: No output list defined ((nil))
+E-AliCentralMCMultiplicityTask::Terminate: No output list defined ((nil))
+I-AliAnalysisTaskMCParticleFilter::Terminate: Average -section 0.0000E+00 and total number of trials 0.000000E+00
+W-AliAnalysisManager::ValidateOutputs: File AliAOD.root was not closed. Closing.
+W-AliAnalysisManager::ValidateOutputs: File AODQA.root was not closed. Closing.
+W-AliAnalysisManager::ValidateOutputs: File EventStat_temp.root was not closed. Closing.
+E-TFile::TFile: file FilterEvents_Trees.root does not exist
+E-AliAnalysisManager::ValidateOutputs: Output file <FilterEvents_Trees.root> was not created or invalid
+======== /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliDPG/prod-201812-01-1/AOD/AODtrainsim.C finished with exit code: 0 ========
+* *****************************************************
+* AliRoot Validation Script V2.3                      *
+* Time:    Tue Dec 25 18:37:33 CET 2018
+* Dir:     /home/grid/alisgm54/alien-job-1347172319
+* Workdir: /home/grid/alisgm54/alien-job-1347172319
+* PATH: /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/bin:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/bin:/cvmfs/alice.cern.ch/bin:/usr/sue/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/puppetlabs/bin:/cvmfs/alice.cern.ch/bin
+* LD_LIBRARY_PATH: /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/globus/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/httpd/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-395/x86_64-unknown-linux-gnu/4.1.2
+* ----------------------------------------------------*
+Listing .
+total 20384
+-rw-r----- 1 alisgm54 z2     150 Dec 25 18:37 6000_6000_0_1759.stat
+-rw-r----- 1 alisgm54 z2 3498994 Dec 25 18:37 AliAOD.Muons.root
+-rw-r----- 1 alisgm54 z2 5902744 Dec 25 18:37 AliAOD.root
+-rw-r----- 1 alisgm54 z2    9688 Dec 25 18:37 AODQA.root
+-rwxr-x--- 1 alisgm54 z2    1515 Dec 25 18:36 command
+-rw-r----- 1 alisgm54 z2    5825 Dec 25 18:36 ConfigVertexingHF.C
+-rw-r----- 1 alisgm54 z2       0 Dec 25 18:36 develTrace_1347172319
+-rw-r----- 1 alisgm54 z2  632957 Dec 25 18:37 event_stat.root
+-rw-r----- 1 alisgm54 z2  629781 Dec 25 18:36 EventStat_temp.root
+-rw-r----- 1 alisgm54 z2     690 Dec 25 18:36 extraValidation.sh
+-rw-r----- 1 alisgm54 z2       0 Dec 25 18:37 outputs_valid
+-rw-r----- 1 alisgm54 z2    4440 Dec 25 18:37 pyxsec_hists.root
+-rw-r----- 1 alisgm54 z2   13806 Dec 25 18:37 resources
+-rw-r----- 1 alisgm54 z2  629781 Dec 25 18:36 ROOTMERGE-add2f4d6-086b-11e9-9717-b3c8b8bcbeef.root
+-rw-r----- 1 alisgm54 z2    9688 Dec 25 18:37 ROOTMERGE-ae5c82aa-086b-11e9-9717-b3c8b8bcbeef.root
+-rw-r----- 1 alisgm54 z2 5902744 Dec 25 18:37 ROOTMERGE-af8b9d3c-086b-11e9-9717-b3c8b8bcbeef.root
+-rw-r----- 1 alisgm54 z2 3498994 Dec 25 18:37 ROOTMERGE-b0ebd8f4-086b-11e9-9717-b3c8b8bcbeef.root
+-rw-r----- 1 alisgm54 z2    4440 Dec 25 18:37 ROOTMERGE-b25a01fc-086b-11e9-9717-b3c8b8bcbeef.root
+-rw-r----- 1 alisgm54 z2    2804 Dec 25 18:37 stderr
+-rw-r----- 1 alisgm54 z2   59222 Dec 25 18:37 stdout
+-rw-r----- 1 alisgm54 z2     108 Dec 25 18:36 validation_merge.rc
+-rwxr-x--- 1 alisgm54 z2    6025 Dec 25 18:36 validation.sh
+-rw-r----- 1 alisgm54 z2     304 Dec 25 18:36 wn.xml
+
+df -h .
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/poolvg-poollv
+                      237G  113G  112G  51% /pool
+* ----------------------------------------------------*
+* Calling extra validation script
+Will look for 1 merged files in output (derived from wn.xml)
+OK: EventStat_temp.root was merged 1 times
+OK: AliAOD.root was merged 1 times
+OK: AliAOD.Muons.root was merged 1 times
+* ################   Job validated ####################
