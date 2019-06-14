@@ -687,6 +687,33 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
        return;
   }
 
+
+
+
+  // loop over tracks and select good muons
+  Int_t nGoodMuons = 0;
+  for(Int_t iTrack(0); iTrack < nTracks; iTrack++) {
+    // get track
+    AliAODTrack* track = static_cast<AliAODTrack*>(fAOD->GetTrack(iTrack));
+    if(!track) return;
+
+    // is it a good muon track?
+    if(!track->IsMuonTrack()) continue;
+    if(!fMuonTrackCuts->IsSelected(track)) continue;
+
+    // increase counter
+    nGoodMuons++;
+
+    // fill muon info
+    fEtaMuonH ->Fill(track->Eta());
+    fRAbsMuonH->Fill(track->GetRAtAbsorberEnd());
+
+  }
+
+
+
+
+
   /* - We are finally at the starting point. We loop over the tracks and select
      - the good muons. Later on everything should happen in this loop. Let us
      - see what the future has in hold.
@@ -699,73 +726,72 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
      - obtain the invariant mass of the J/Psi through the Mag() method of the
      - class. Hope for the best.
    */
-  Int_t nGoodMuons = 0;
-  AliAODTrack* track[2];
-  track[0]         = 0x0;
-  track[1]         = 0x0;
-  for(Int_t iTrack(0); iTrack < nTracks; iTrack++) {
-    /* - This should be another form of event selection.
-       - I am basically requesting the presence of TWO good muons only.
-       - Later I will be checking whether of they are likesign or unlikesign.
-     */
-    // if(nGoodMuons > 2) {
-    //      PostData(1, fOutputList);
-    //      return;
-    // }
-    track[nGoodMuons] = static_cast<AliAODTrack*>(fAOD->GetTrack(iTrack));
-    if(!track[nGoodMuons]) return;
-
-    // is it a good muon track?
-    if(!track[nGoodMuons]->IsMuonTrack()) {
-        // track[nGoodMuons] = 0x0;
-        continue;
-    }
-    if(!fMuonTrackCuts->IsSelected(track[nGoodMuons])) {
-        // track[nGoodMuons] = 0x0;
-        continue;
-    }
-
-    // MUON SELECTION
-    /* - This is Eugeny Krishen's MUON selection from the talk in 14/1/2019 for
-       - the PWG-UD (UPC oriented) meeting. The event selection requires:
-       - Muon trigger matching >=2 (1 GeV/c threshold);
-       - (-4) < eta < (-2.5);
-       - (17.5 cm) < R_{abs} < (89.5 cm);
-       - p \times DCA cut;
-    */
-
-    // increase counter
-    nGoodMuons++;
-  }
-  /* - We need EXACTLY 2 good muons !!!!!
-     -
-   */
+  // Int_t nGoodMuons = 0;
+  // AliAODTrack* track[2];
+  // track[0]         = 0x0;
+  // track[1]         = 0x0;
+  // for(Int_t iTrack(0); iTrack < nTracks; iTrack++) {
+  //   /* - This should be another form of event selection.
+  //      - I am basically requesting the presence of TWO good muons only.
+  //      - Later I will be checking whether of they are likesign or unlikesign.
+  //    */
+  //   if(nGoodMuons > 2) {
+  //        PostData(1, fOutputList);
+  //        return;
+  //   }
+  //   track[nGoodMuons] = static_cast<AliAODTrack*>(fAOD->GetTrack(iTrack));
+  //   if(!track[nGoodMuons]) return;
+  //
+  //   // is it a good muon track?
+  //   if(!track[nGoodMuons]->IsMuonTrack()) {
+  //       // track[nGoodMuons] = 0x0;
+  //       continue;
+  //   }
+  //   if(!fMuonTrackCuts->IsSelected(track[nGoodMuons])) {
+  //       // track[nGoodMuons] = 0x0;
+  //       continue;
+  //   }
+  //
+  //   // MUON SELECTION
+  //   /* - This is Eugeny Krishen's MUON selection from the talk in 14/1/2019 for
+  //      - the PWG-UD (UPC oriented) meeting. The event selection requires:
+  //      - Muon trigger matching >=2 (1 GeV/c threshold);
+  //      - (-4) < eta < (-2.5);
+  //      - (17.5 cm) < R_{abs} < (89.5 cm);
+  //      - p \times DCA cut;
+  //   */
+  //
+  //   // increase counter
+  //   nGoodMuons++;
+  // }
+  // /* - We need EXACTLY 2 good muons !!!!!
+  //    -
+  //  */
   // if( nGoodMuons != 2 ) {
   //       PostData(1, fOutputList);
   //       return;
   // }
-  /* - Implementing the track cut on the unlike muons
-   * -
-   */
+  // /* - Implementing the track cut on the unlike muons
+  //  * -
+  //  */
   // if( (track[0]->Charge()) == (track[1]->Charge()) ) {
   //       PostData(1, fOutputList);
   //       return;
   // }
-  for(Int_t iFilling = 0; iFilling < nGoodMuons; iFilling++) {
-        fEtaMuonH ->Fill(track[iFilling]->Eta());
-        fRAbsMuonH->Fill(track[iFilling]->GetRAtAbsorberEnd());
-  }
+  // for(Int_t iFilling = 0; iFilling < nGoodMuons; iFilling++) {
+  //       fEtaMuonH ->Fill(track[iFilling]->Eta());
+  //       fRAbsMuonH->Fill(track[iFilling]->GetRAtAbsorberEnd());
+  // }
   // store muons
   fNumberMuonsH->Fill(nGoodMuons);
-  // fEntriesAgainstRunNumberH->Fill(fRunNum);
+  fEntriesAgainstRunNumberH->Fill(fRunNum);
   /* - This is the last part of my try to obtain a proper RunNumbers histogram...
      -
    */
   fEntriesAgainstRunNumberProperlyH->Fill( Form("%d", fRunNum) , 1 );
   fEfficiencyPerRunH               ->Fill( Form("%d", fRunNum) , 1 );
-
-
-  
+  // if (nGoodMuons>0) fCounterH->Fill(iSelectionCounter); // At least one good muon
+  // iSelectionCounter++;
 
   /* - Finally the core!!!
    * - What will be happening is that we will instantiate TLorentzVectors to
@@ -773,18 +799,18 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
    * - after this we should be able to obtain the peak of the J/Psi. But
    * - things never go as expected, so who knows!
    */
-  TLorentzVector muons[2];
-  TLorentzVector possibleJPsi;
-  Double_t       chargeOfMuons[2];
-  for(int indexMuon = 0; indexMuon < 2; indexMuon++) {
-        muons[indexMuon].SetPtEtaPhiM(   track[indexMuon]->Pt(),
-                                         track[indexMuon]->Eta(),
-                                         track[indexMuon]->Phi(),
-                                         TDatabasePDG::Instance()->GetParticle(13)->Mass()
-                                       );
-        possibleJPsi += muons[indexMuon];
-        chargeOfMuons[indexMuon] = track[indexMuon]->Charge();
-  }
+  // TLorentzVector muons[2];
+  // TLorentzVector possibleJPsi;
+  // Double_t       chargeOfMuons[2];
+  // for(int indexMuon = 0; indexMuon < 2; indexMuon++) {
+  //       muons[indexMuon].SetPtEtaPhiM(   track[indexMuon]->Pt(),
+  //                                        track[indexMuon]->Eta(),
+  //                                        track[indexMuon]->Phi(),
+  //                                        TDatabasePDG::Instance()->GetParticle(13)->Mass()
+  //                                      );
+  //       possibleJPsi += muons[indexMuon];
+  //       chargeOfMuons[indexMuon] = track[indexMuon]->Charge();
+  // }
 
 
 
