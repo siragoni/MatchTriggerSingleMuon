@@ -432,24 +432,24 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
       PostData(1, fOutputList);
       return;
   }
-  fMCEvent = MCEvent();
-  if(!fMCEvent) {
-      PostData(1, fOutputList);
-      return;
-  }
-  if(fMCEvent) {
-    fRunNum    = fAOD->GetRunNumber();
-    SetLuminosityCap();
-    fCounterGeneratedLevel[ fRunNum - 240000 ] += 1;
-    // cout << "fCounterGeneratedLevel[ " << (fRunNum - 240000) << " ] = " << fCounterGeneratedLevel[ fRunNum - 240000 ] << endl;
-    // if( fCounterGeneratedLevel[ fRunNum - 240000 ] > ( (Int_t)fLumiPerRun * (Int_t)40000 ) ) {
-    if( fCounterGeneratedLevel[ fRunNum - 240000 ] > ( fLumiPerRun * 40000 ) ) {
-          PostData(1, fOutputList);
-          return;
-    }
-    ProcessMCParticles(fMCEvent);
-    fMCEfficiencyPerRunH->Fill( Form("%d", fRunNum) , 1 );
-  }
+  // fMCEvent = MCEvent();
+  // if(!fMCEvent) {
+  //     PostData(1, fOutputList);
+  //     return;
+  // }
+  // if(fMCEvent) {
+  //   fRunNum    = fAOD->GetRunNumber();
+  //   SetLuminosityCap();
+  //   fCounterGeneratedLevel[ fRunNum - 240000 ] += 1;
+  //   // cout << "fCounterGeneratedLevel[ " << (fRunNum - 240000) << " ] = " << fCounterGeneratedLevel[ fRunNum - 240000 ] << endl;
+  //   // if( fCounterGeneratedLevel[ fRunNum - 240000 ] > ( (Int_t)fLumiPerRun * (Int_t)40000 ) ) {
+  //   if( fCounterGeneratedLevel[ fRunNum - 240000 ] > ( fLumiPerRun * 40000 ) ) {
+  //         PostData(1, fOutputList);
+  //         return;
+  //   }
+  //   ProcessMCParticles(fMCEvent);
+  //   fMCEfficiencyPerRunH->Fill( Form("%d", fRunNum) , 1 );
+  // }
   /* - We are now checking if there were any tracks. If there were at least one,
      - then the histogram gets filled again. If not we are returning. There
      - would be no point in going further.

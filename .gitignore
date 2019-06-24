@@ -20,6 +20,8 @@
 *.mod
 *.smod
 
+*.pcm
+
 # Compiled Static libraries
 *.lai
 *.la
@@ -32,3 +34,4 @@
 *.app
 
 MCtrain/
+pngResults/

@@ -115,8 +115,10 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
         TChain* chain = new TChain("aodTree");
         // add a few files to the chain (change this so that your local files are added)
 
-        FILE *f = fopen("listMCsample.txt","r");
+        // FILE *f = fopen("listMCsample.txt","r");
         // FILE *f = fopen("list.txt","r");
+        FILE *f = fopen("list18qr.txt","r");
+        // FILE *f = fopen("list2015Full.txt","r");
         char fileadd[300];
         Int_t flaggingValue = 0;
         while(fscanf(f,"%s",fileadd)==1){
