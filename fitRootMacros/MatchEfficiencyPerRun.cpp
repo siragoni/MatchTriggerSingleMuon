@@ -28,10 +28,12 @@ void MatchEfficiencyPerRun(){
   // TFile* fileList = new TFile("MCtrainResults/2019-06-16-LHC15o/kCohJpsiToMu/AnalysisResults.root");
   // TFile* fileList = new TFile("MCtrain/LHC16b218l7.root");
   // TFile* fileList = new TFile("MCtrain/LHC16b2.root");
-  TFile* fileList = new TFile("MCtrain/LHC18l7.root");
+  // TFile* fileList = new TFile("MCtrain/LHC18l7.root");
+  TFile* fileList = new TFile("MCtrain/AnalysisResultsMatchLHC18qr.root");
   TDirectory* dir = fileList->GetDirectory("MyTask");
   TList* listings;
-  dir->GetObject("MyOutputContainer", listings);
+  // dir->GetObject("MyOutputContainer", listings);
+  dir->GetObject("SingleMuonTriggerMatch", listings);
   /* - We now do the same as before to ascertain if the TList was there and
    * - to try to retrieve the plots. Result:
    *   listings->ls()
@@ -57,7 +59,8 @@ void MatchEfficiencyPerRun(){
 
 
   // TFile f("pngResults/efficiency16b2.root", "recreate");
-  TFile f("pngResults/efficiency18l7.root", "recreate");
+  // TFile f("pngResults/efficiency18l7.root", "recreate");
+  TFile f("pngResults/efficiency18qr.root", "recreate");
   RealEfficiency->Write();
   f.Close();
 }

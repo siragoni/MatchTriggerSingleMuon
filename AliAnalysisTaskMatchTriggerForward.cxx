@@ -450,6 +450,26 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
   //   ProcessMCParticles(fMCEvent);
   //   fMCEfficiencyPerRunH->Fill( Form("%d", fRunNum) , 1 );
   // }
+  /* - Trigger selection:
+   - here we verify which trigger was the event selected upon.
+   - The useful triggers are only those needed for the CTRUE
+   - analysis. Hence, if we cannot find them we return...
+   -
+ */
+
+  Int_t fCtrue = -1;
+  TString trigger = fAOD->GetFiredTriggerClasses();
+  if (trigger.Contains("CINT7-B-NOPF-MUFAST")) fCtrue = 1;
+  // if (trigger.Contains("CTRUE-B")) fCtrue = 1;
+  // if (trigger.Contains("CTRUE-A")) fCtrue = 2;
+  // if (trigger.Contains("CTRUE-C")) fCtrue = 3;
+  // if (trigger.Contains("CTRUE-E")) fCtrue = 4;
+  if ( fCtrue == -1 ) {
+    PostData(1, fOutputList);
+    return;
+  }
+  fCounterH->Fill(3);
+
   /* - We are now checking if there were any tracks. If there were at least one,
      - then the histogram gets filled again. If not we are returning. There
      - would be no point in going further.
