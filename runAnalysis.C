@@ -14,7 +14,7 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
 // opt = 0; 2018 q
 // opt = 1; 2018 r
 {
-  Int_t listOfGoodRunNumLHC18qIsMC[] = { 295585, 295586, 295587, 295588, 295589, 295612,
+  Int_t listOfGoodRunNumbersLHC18q[] = { 295585, 295586, 295587, 295588, 295589, 295612,
                                          295615, 295665, 295666, 295667, 295668, 295671,
                                          295673, 295675, 295676, 295677, 295714, 295716,
                                          295717, 295718, 295719, 295723, 295725, 295753,
@@ -36,7 +36,7 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
                                          296514, 296516, 296547, 296548, 296549, 296550,
                                          296551, 296552, 296553, 296615, 296616, 296618,
                                          296619, 296622, 296623 };
-  Int_t listOfGoodRunNumLHC18rIsMC[] = { 296690, 296691, 296694, 296749, 296750, 296781,
+  Int_t listOfGoodRunNumbersLHC18r[] = { 296690, 296691, 296694, 296749, 296750, 296781,
                                          296784, 296785, 296786, 296787, 296791, 296793,
                                          296794, 296799, 296836, 296838, 296839, 296848,
                                          296849, 296850, 296851, 296852, 296890, 296894,
@@ -52,28 +52,34 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
                                          297415, 297441, 297442, 297446, 297450, 297451,
                                          297452, 297479, 297481, 297483, 297512, 297537,
                                          297540, 297541, 297542, 297544, 297558, 297588,
-                                         297590, 297595, 297623, 297624 };
-  Int_t sizeOfLHC18qIsMC = 0;
-  Int_t sizeOfLHC18rIsMC = 0;
-  /**
-   * This is the vector containing the GOOD RunNumbers.
+                                         297590, 297595/*, 297623, 297624*/ };
+  /* - This good run number list has been taken from the analysis
+     - note of Kay's talk for DIS 2017, see:
+     - https://alice-notes.web.cern.ch/system/files/notes/analysis/596/2017-Feb-08-analysis_note-2017-Feb-08-analysis-note.pdf
+     -
    */
-  std::vector<Int_t> fVectorGoodRunNumbersIsMC;
-  for ( Int_t GoodRunNumberLHC18qIsMC : listOfGoodRunNumLHC18qIsMC ) {
-    fVectorGoodRunNumbersIsMC.push_back(GoodRunNumberLHC18qIsMC);
-    sizeOfLHC18qIsMC++;
-  }
-  for ( Int_t GoodRunNumberLHC18rIsMC : listOfGoodRunNumLHC18rIsMC ) {
-    fVectorGoodRunNumbersIsMC.push_back(GoodRunNumberLHC18rIsMC);
-    sizeOfLHC18rIsMC++;
-  }
+  Int_t listOfGoodRunNumbersLHC15o[] = { 244918, 244980, 244982, 244983, 245064, 245066, 245068, 245145, 245146, 245151,
+                                         245152, 245231, 245232, 245233, 245253, 245259, 245343, 245345, 245346, 245347,
+                                         245353, 245401, 245407, 245409, 245410, 245446, 245450, 245496, 245501, 245504,
+                                         245505, 245507, 245535, 245540, 245542, 245543, 245554, 245683, 245692, 245700,
+                                         245705, 245729, 245731, 245738, 245752, 245759, 245766, 245775, 245785, 245793,
+                                         245829, 245831, 245833, 245949, 245952, 245954, 245963, 245996, 246001, 246003,
+                                         246012, 246036, 246037, 246042, 246048, 246049, 246053, 246087, 246089, 246113,
+                                         246115, 246148, 246151, 246152, 246153, 246178, 246181, 246182, 246217, 246220,
+                                         246222, 246225, 246272, 246275, 246276, 246390, 246391, 246392, 246424, 246428,
+                                         246431, 246433, 246434, 246487, 246488, 246493, 246495, 246675, 246676, 246750,
+                                         246751, 246755, 246757, 246758, 246759, 246760, 246763, 246765, 246804, 246805,
+                                         246806, 246807, 246808, 246809, 246844, 246845, 246846, 246847, 246851, 246855,
+                                         246859, 246864, 246865, 246867, 246871, 246930, 246937, 246942, 246945, 246948,
+                                         246949, 246980, 246982, 246984, 246989, 246991, 246994
+                                       };
 
 
 
 
     // set if you want to run the analysis locally (kTRUE), or on grid (kFALSE)
-    // Bool_t local = kFALSE;
-    Bool_t local = kTRUE;
+    Bool_t local = kFALSE;
+    // Bool_t local = kTRUE;
     // if you run on grid, specify test mode (kTRUE) or full grid model (kFALSE)
     Bool_t gridTest = kFALSE;
     // Bool_t gridTest = kTRUE;
@@ -165,14 +171,22 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
   	  // MC has no prefix, data has prefix 000
   	  alienHandler->SetRunPrefix("000");
   	  // runnumber
-  	  alienHandler->AddRunNumber(296510);
+      for( Int_t iRunLHC18q = 0; iRunLHC18q <  98; iRunLHC18q++){
+        alienHandler->AddRunNumber( listOfGoodRunNumbersLHC18q[iRunLHC18q] );
+      }
   	} else if (opt == 1) {
-  	  alienHandler->SetGridDataDir("/alice/data/2018/LHC18r");
-  	  alienHandler->SetDataPattern("*muon_calo_pass2/PWGUD/UD_PbPb_AOD/426_20190111-1316/*AliAOD.UPCNano.root");
+  	  // alienHandler->SetGridDataDir("/alice/data/2018/LHC18r");
+  	  // alienHandler->SetDataPattern("*muon_calo_pass2/PWGUD/UD_PbPb_AOD/426_20190111-1316/*AliAOD.UPCNano.root");
+      alienHandler->SetGridDataDir("/alice/data/2018/LHC18r");
+      alienHandler->SetDataPattern("*muon_calo_pass3/AOD216/*/AliAOD.root");
+
   	  // MC has no prefix, data has prefix 000
   	  alienHandler->SetRunPrefix("000");
+      for( Int_t iRunLHC18r = 0; iRunLHC18r <  98; iRunLHC18r++){
+        alienHandler->AddRunNumber( listOfGoodRunNumbersLHC18r[iRunLHC18r] );
+      }
   	  // runnumber
-  	  alienHandler->AddRunNumber(296849);
+  	  // alienHandler->AddRunNumber(296849);
   	} else {
   	  cout << " not a valid option ... bye!" << endl;
   	}
@@ -189,12 +203,12 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
         // merging: run with "kTRUE" and "full" for normal run
         // to merge on grid run jobs in SetRunMode("terminate")
         // to collect final results set SetMergeViaJDL(kFALSE)
-        alienHandler->SetMergeViaJDL(kTRUE);
+        // alienHandler->SetMergeViaJDL(kTRUE);
 
         /* - The setting to kFALSE is to download the output files
            -
          */
-        // alienHandler->SetMergeViaJDL(kFALSE);
+        alienHandler->SetMergeViaJDL(kFALSE);
         alienHandler->SetMaxMergeStages(1);
 
 
@@ -222,12 +236,12 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
             /* - The option FULL is to send the full analysis.
                -
              */
-            alienHandler->SetRunMode("full");
+            // alienHandler->SetRunMode("full");
 
             /* - This option TERMINATE is used for the merging of the files.
                -
              */
-            // alienHandler->SetRunMode("terminate");
+            alienHandler->SetRunMode("terminate");
             mgr->StartAnalysis("grid");
         }
     }
