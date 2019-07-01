@@ -459,8 +459,8 @@ void AliAnalysisTaskMatchTriggerForward::UserExec(Option_t *)
 
   Int_t fCtrue = -1;
   TString trigger = fAOD->GetFiredTriggerClasses();
-  if (trigger.Contains("CINT7-B-NOPF-MUFAST")) fCtrue = 1;
-  // if (trigger.Contains("CTRUE-B")) fCtrue = 1;
+  // if (trigger.Contains("CINT7-B-NOPF-MUFAST")) fCtrue = 1;
+  if (trigger.Contains("CTRUE-B")) fCtrue = 1;
   // if (trigger.Contains("CTRUE-A")) fCtrue = 2;
   // if (trigger.Contains("CTRUE-C")) fCtrue = 3;
   // if (trigger.Contains("CTRUE-E")) fCtrue = 4;
