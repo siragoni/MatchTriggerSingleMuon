@@ -81,8 +81,8 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
     Bool_t local = kFALSE;
     // Bool_t local = kTRUE;
     // if you run on grid, specify test mode (kTRUE) or full grid model (kFALSE)
-    Bool_t gridTest = kFALSE;
-    // Bool_t gridTest = kTRUE;
+    // Bool_t gridTest = kFALSE;
+    Bool_t gridTest = kTRUE;
 
     // since we will compile a class, tell root where to look for headers
 #if !defined (__CINT__) || defined (__CLING__)
@@ -123,8 +123,8 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
 
         // FILE *f = fopen("listMCsample.txt","r");
         // FILE *f = fopen("list.txt","r");
-        // FILE *f = fopen("list18qr.txt","r");
-        FILE *f = fopen("list2015Full.txt","r");
+        FILE *f = fopen("list18qr.txt","r");
+        // FILE *f = fopen("list2015Full.txt","r");
         char fileadd[300];
         Int_t flaggingValue = 0;
         while(fscanf(f,"%s",fileadd)==1){
@@ -178,7 +178,8 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
   	  // alienHandler->SetGridDataDir("/alice/data/2018/LHC18r");
   	  // alienHandler->SetDataPattern("*muon_calo_pass2/PWGUD/UD_PbPb_AOD/426_20190111-1316/*AliAOD.UPCNano.root");
       alienHandler->SetGridDataDir("/alice/data/2018/LHC18r");
-      alienHandler->SetDataPattern("*muon_calo_pass3/AOD216/*/AliAOD.root");
+      alienHandler->SetDataPattern("muon_calo_pass3/AOD216/*/AliAOD.root");
+      // alienHandler->SetDataPattern("muon_calo_pass3/AOD216/*/AliAOD.UPCNano.root");
 
   	  // MC has no prefix, data has prefix 000
   	  alienHandler->SetRunPrefix("000");
@@ -203,12 +204,12 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
         // merging: run with "kTRUE" and "full" for normal run
         // to merge on grid run jobs in SetRunMode("terminate")
         // to collect final results set SetMergeViaJDL(kFALSE)
-        // alienHandler->SetMergeViaJDL(kTRUE);
+        alienHandler->SetMergeViaJDL(kTRUE);
 
         /* - The setting to kFALSE is to download the output files
            -
          */
-        alienHandler->SetMergeViaJDL(kFALSE);
+        // alienHandler->SetMergeViaJDL(kFALSE);
         alienHandler->SetMaxMergeStages(1);
 
 
@@ -236,12 +237,12 @@ void runAnalysis(Int_t opt, Int_t isMC = 0)
             /* - The option FULL is to send the full analysis.
                -
              */
-            // alienHandler->SetRunMode("full");
+            alienHandler->SetRunMode("full");
 
             /* - This option TERMINATE is used for the merging of the files.
                -
              */
-            alienHandler->SetRunMode("terminate");
+            // alienHandler->SetRunMode("terminate");
             mgr->StartAnalysis("grid");
         }
     }

@@ -331,7 +331,8 @@ class AliAnalysisTaskMatchTriggerForward : public AliAnalysisTaskSE
                                  * of the neutron ZDC.
                                  * On a run-by-run basis.
                                  */
-        TH1F*                   fZNATimeAgainstEntriesH;         //!
+        TH1F*                   fZNCEnergyPerRunH[364];         //!
+        TH1F*                   fZNAEnergyPerRunH[364];         //!
 
                                 /**
                                  * This histogram records the pt-ditribution
