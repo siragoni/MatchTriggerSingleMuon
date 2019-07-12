@@ -1,0 +1,164 @@
+[AliPhysics/vAN-20190114_ROOT6-1] AliEVE > alieve local          
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.14/04                http://root.cern.ch |
+  |                               (c) 1995-2018, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-14-04, 23 August 2018                          |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+AliEveConfigManger -- Creating instance of AliEveConfigManager
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+I-AliEveInit: 
+
+OCDB path:local:///cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/../src/OCDB/
+
+
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+E-TTree::SetBranchStatus: No branch name is matching wildcard -> ESDfriend*
+I-AliEveDataSourceOffline::readESDTree: found and attached ESD friend.
+W-AliAODEvent::ReadFromTree: AliAODEvent::ReadFromTree() TList contains less than the standard contents 8 < 22 That might be fine though (at least for filtered AODs)
+E-TFile::TFile: file galice.root does not exist
+W-AliEveDataSourceOffline::Open: can not read 'galice.root'.
+W-AliEveDataSourceOffline::Open: Bootstraping of run-loader failed.
+W-AliEveDataSourceOffline::Open: raw-data not initialized.
+I-AliCDBManager::Init: AliEn classes enabled in Root. AliCDBGrid factory registered.
+E-AliCDBLocal::AliCDBLocal: Can't open directory </cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/../src/OCDB/>!
+I-AliEveInit: Adding standard macros
+Opening event -1 from .
+E-TROOT::Macro: macro VizDB_scan.C not found in path .:/cvmfs/alice.cern.ch/el6-x86_64/Packages/ROOT/v6-14-04-5/macros:/cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/EVE/macros:/cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/EVE/macros/data:/cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/EVE/macros/common
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+I-TGeoManager::TGeoManager: Geometry Geometry, default geometry created
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+W-AliEveInit::GetConfig:  could not find .eve_config in home directory! Trying ~/eve_config
+W-AliEveInit::GetConfig:  could not find eve_config in home directory! Trying in $ALICE_ROOT/EVE/EveBase/
+I-AliEveInit::GetConfig: Read config from standard location
+
+
+ setting autoload to:0
+W-AliEveEventManager::AliEveEventManager::SetAutoLoad : Setting autoload to the same value as before - false. Ignoring.
+E-TQObject::CheckConnectArgs: slot TRint::Terminate() does not exist
+root [0] Go to event:1
+I-AliCDBLocal::QueryCDB: Querying files valid for run 296691 and path "*" into CDB storage  "local:///cvmfs/alice.cern.ch/el6-x86_64/Packages/AliRoot/v5-09-44a_ROOT6-1/../src/OCDB/"
+I-AliCDBLocal::QueryCDB: 0 valid files found!
+E-AliCDBLocal::GetEntry: No file found matching this id!
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:2
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:3
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:4
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:5
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:6
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:7
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:8
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:9
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:10
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:11
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:12
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:13
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:14
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:15
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:16
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:17
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:18
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:19
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:20
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:21
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:22
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:23
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:24
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:25
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:26
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:27
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:28
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:29
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:30
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:31
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:32
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:33
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:34
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:35
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:36
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:37
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:38
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:39
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:40
+CDB not OK! not executing AfterNewEventLoaded
+Go to event:41
+CDB not OK! not executing AfterNewEventLoaded
+
