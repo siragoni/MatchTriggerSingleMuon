@@ -135,7 +135,7 @@ events.autoload.set:                    0
 save.on.autoload:                       0
 ALICE_LIVE.send:                        0
 
-OCDB.default.path:                      local://$(ALICE_ROOT)/../src/OCDB/
+OCDB.default.path:                      local:///cvmfs/alice-ocdb.cern.ch/calibration/data/2018/OCDB
 
 logbook.host:                           logbook_host
 logbook.port:                           0000
